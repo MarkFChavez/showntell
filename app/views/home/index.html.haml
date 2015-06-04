@@ -1,9 +1,1 @@
-.top50
-  .row.text-center
-    .col-lg-8.col-lg-offset-2
-      %h1.large= t("app.title")
-      %p.lead= t("app.subtitle")
-
-      = link_to user_omniauth_authorize_path(:github), class: "btn btn-lg btn-default" do
-        %i.fa.fa-github.fa-lg
-        Sign in with GitHub
+= link_to "Logout", destroy_user_session_path, method: :delete
