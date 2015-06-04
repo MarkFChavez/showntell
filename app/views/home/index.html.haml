@@ -1,1 +1,18 @@
-= link_to "Logout", destroy_user_session_path, method: :delete
+.row.top50
+  .col-lg-8.col-lg-offset-2
+    %p.lead
+      %i.fa.fa-cloud.fa-lg
+      = t("app.title")
+    %hr
+
+    .row
+      .col-lg-12
+        %span
+          %i.fa.fa-user.fa-lg
+          #{current_user.name} (#{current_user.email})
+          = link_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-danger btn-xs"
+
+    .row.top20
+      .col-lg-12
+        %p.lead Choose a repository below:
+
