@@ -7,6 +7,7 @@ group :development do
 end
 
 gem 'devise'
+gem 'font-awesome-sass'
 gem 'omniauth-github'
 gem 'bootstrap-sass'
 gem 'haml'
