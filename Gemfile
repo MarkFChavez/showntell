@@ -7,7 +7,10 @@ group :development do
 end
 
 gem 'devise'
+gem 'omniauth-github'
 gem 'bootstrap-sass'
+gem 'haml'
+gem 'haml-rails'
 
 group :production do
   gem 'pg'
